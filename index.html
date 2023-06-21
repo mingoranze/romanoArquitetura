@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romano Arquitetura</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                escuro: '#001233',
+                claro: '#979DAC',
+              }
+            }
+          }
+        }
+      </script>
+      <style>
+          *{
+              font-family: 'Montserrat';
+          }
+      </style>
+</head>
+<body>
+    <header class="bg-escuro w-full h-12 flex items-center">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center overflow-hidden">
+                <img class="w-6 h-auto cursor-pointer" src="assets/images/menu.svg" alt="">
+                <img  class="w-24 h-auto" src="assets/images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="hidden bg-escuro absolute h-screen w-full flex justify-center">
+            <nav class="bg-red-500">
+                <ul class="relative">
+                    <li>Inicio</li>
+                    <li>Serviços</li>
+                    <li>Portfolio</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="h-screen bg-slate-200">
+            <div class="absolute w-full h-full bg-center bg-cover opacity-10 bg-[url('./assets/images/home.png')]"></div>
+            <div class="container mx-auto px-4">
+                <div class="relative">
+                    <div class="pt-20">
+                        <h1 class="text-4xl font-bold">Leonardo</h1>
+                        <h2 class="text-4xl font-bold">Romano</h2>
+                        <p class="text-lg mt-2">Arquitetura & construção</p> 
+                    </div>
+                    <div class="flex mt-2">
+                        <img class="h-auto w-5 mr-2" src="assets/images/whats.png" alt="">
+                        <img class="h-auto w-5 mr-2" src="assets/images/instagram.png" alt="">
+                    </div>
+                    <div class="mt-6 flex">
+                        <button class="w-20 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-sm px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(mamoraria)</button>
+                        <button class="w-20 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-sm px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(outra area)</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="h-screen">...</section>
+    </main>
+</body>
+</html>
