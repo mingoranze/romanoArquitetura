@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romano Arquitetura</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
           theme: {
@@ -21,26 +24,48 @@
       </script>
       <style>
           *{
-              font-family: 'Montserrat';
+              font-family: 'Poppins';
           }
       </style>
 </head>
 <body>
+    <div class="models hidden">
+        <div id="service" class="relative ml-2 flex md:w-2/4 flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
+            <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
+            <h2 class="text-claro font-bold text-md">...</h2>
+            <p class="text-medio text-xs text-center">...</p>    
+            <div class="bg-claro w-8 h-0.5 mt-4"></div>
+        </div>
+    </div>
     <header class="bg-escuro w-full h-12 flex items-center">
         <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center overflow-hidden">
-                <img class="w-6 h-auto cursor-pointer" src="assets/images/menu.svg" alt="">
-                <img  class="w-24 h-auto" src="assets/images/logo.png" alt="">
+            <div class="flex justify-end items-center overflow-hidden">
+                <img id="open" class="w-6 h-auto cursor-pointer" src="assets/images/menu.svg" alt="">
             </div>
         </div>
-        <div class="hidden bg-escuro absolute h-screen w-full flex justify-center">
-            <nav class="bg-red-500">
-                <ul class="relative">
-                    <li>Inicio</li>
-                    <li>Serviços</li>
-                    <li>Portfolio</li>
-                </ul>
-            </nav>
+        <div id="menuOpen" class="hidden transition-all flex absolute z-50 bg-escuro w-full h-1/2 top-0  justify-center">
+           <div class="container mx-auto px4">
+               <nav class="h-full w-full flex flex-col">
+                   <div class="w-full flex justify-end">
+                       <img id="close" class="w-5 h-5 m-4 cursor-pointer" src="assets/images/close.svg" alt="">
+                   </div>
+                   <ul class="">
+                       <a href="">
+                           <li class="text-claro text-md font-light uppercase border-b border-claro w-full hover:bg-claro hover:text-escuro cursor-pointer">Inicio</li>
+                       </a>
+                       <a href="#service">
+                           <li class="text-claro text-md font-light uppercase border-b border-claro w-full hover:bg-claro hover:text-escuro cursor-pointer">Serviços</li>
+                       </a>
+                       <a href="">
+                           <li class="text-claro text-md font-light uppercase border-b border-claro w-full hover:bg-claro hover:text-escuro cursor-pointer">Portfolio</li>
+                       </a>
+                   </ul>
+                   <div class="flex justify-center mt-4">
+                       <img class="h-auto w-5 mr-2 cursor-pointer" src="assets/images/whats.png" alt="">
+                       <img class="h-auto w-5 mr-2 cursor-pointer" src="assets/images/instagram.png" alt="">
+                    </div>
+                </nav>
+           </div>
         </div>
     </header>
     <main>
@@ -58,51 +83,25 @@
                         <img class="h-auto w-5 mr-2" src="assets/images/instagram.png" alt="">
                     </div>
                     <div class="mt-6 flex">
-                        <button class="w-20 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-sm px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(mamoraria)</button>
-                        <button class="w-20 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-sm px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(outra area)</button>
+                        <button class="w-26 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-xs px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(mamoraria)</button>
+                        <button class="w-26 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-xs px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(outra area)</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="h-screen bg-black">
+        <section id="service" class="h-screen bg-black">
             <div class="absolute w-full h-full bg-cover bg-center opacity-10 bg-[url('./assets/images/serviços.png')]"></div>
             <div class="container mx-auto px-4">
-                <div class="relative pt-16">
-                    <div class="flex flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
-                        <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
-                        <h2 class="text-claro font-bold text-lg">Serviço</h2>
-                        <p class="text-claro text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur molestias omnis fugit inventore amet reiciendis repel</p>    
-                        <div class="bg-claro w-8 h-0.5 mt-4"></div>
+                <div id="serviceArea" class="relative flex-col pt-16 items-center md:flex md:flex-wrap md:justify-center">
+                    <div class="relative flex mb-6 items-center flex-col">
+                        <h2 class="text-claro text-3xl font-bold">Serviços</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
                     </div>
-                    <div class="flex flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
-                        <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
-                        <h2 class="text-claro font-bold text-lg">Serviço</h2>
-                        <p class="text-claro text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur molestias omnis fugit inventore amet reiciendis repel</p>    
-                        <div class="bg-claro w-8 h-0.5 mt-4"></div>
-                    </div>
-                    <div class="flex flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
-                        <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
-                        <h2 class="text-claro font-bold text-lg">Serviço</h2>
-                        <p class="text-claro text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur molestias omnis fugit inventore amet reiciendis repel</p>    
-                        <div class="bg-claro w-8 h-0.5 mt-4"></div>
-                    </div>
-                    <div class="flex flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
-                        <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
-                        <h2 class="text-claro font-bold text-lg">Serviço</h2>
-                        <p class="text-claro text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur molestias omnis fugit inventore amet reiciendis repel</p>    
-                        <div class="bg-claro w-8 h-0.5 mt-4"></div>
-                    </div>
-                    <div class="flex flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
-                        <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
-                        <h2 class="text-claro font-bold text-lg">Serviço</h2>
-                        <p class="text-claro text-sm text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur molestias omnis fugit inventore amet reiciendis repel</p>    
-                        <div class="bg-claro w-8 h-0.5 mt-4"></div>
-                    </div>
-                    
-                    
                 </div>
             </div>
         </section>
     </main>
+<script src="assets/js/services.js"></script>
+<script src="assets/js/script.js"></script>    
 </body>
 </html>
