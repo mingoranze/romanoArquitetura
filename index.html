@@ -30,11 +30,12 @@
 </head>
 <body>
     <div class="models hidden">
-        <div id="service" class="relative ml-2 flex md:w-2/4 flex-col items-center mb-2 bg-escuro shadow-md shadow-black rounded-lg">
+        <div id="service" class="relative ml-2 flex md:w-2/4 flex-col items-center mt-2 bg-escuro shadow-md shadow-black rounded-lg">
             <div class="absolute right-0 bg-claro w-2 h-2 m-2 rounded-full"></div>
             <h2 class="text-claro font-bold text-md">...</h2>
             <p class="text-medio text-xs text-center">...</p>    
-            <div class="bg-claro w-8 h-0.5 mt-4"></div>
+            <a href="" class="mt-2 text-sm uppercase text-medio animate-pulse">Saiba mais</a>
+            <div class="bg-claro w-8 h-0.5 mt-2"></div>
         </div>
     </div>
     <header class="bg-escuro w-full h-12 flex items-center">
@@ -43,8 +44,8 @@
                 <img id="open" class="w-6 h-auto cursor-pointer" src="assets/images/menu.svg" alt="">
             </div>
         </div>
-        <div id="menuOpen" class="hidden transition-all flex absolute z-50 bg-escuro w-full h-1/2 top-0  justify-center">
-           <div class="container mx-auto px4">
+        <div id="menuOpen" class="translate-y-[-20rem] transition transition-transform duration-700 flex absolute z-50 bg-escuro w-full h-1/2 top-0  justify-center">
+           <div class="container mx-auto">
                <nav class="h-full w-full flex flex-col">
                    <div class="w-full flex justify-end">
                        <img id="close" class="w-5 h-5 m-4 cursor-pointer" src="assets/images/close.svg" alt="">
@@ -61,8 +62,12 @@
                        </a>
                    </ul>
                    <div class="flex justify-center mt-4 h-full items-end mb-2">
-                       <img class="h-auto w-5 mr-2 cursor-pointer" src="assets/images/whats.png" alt="">
-                       <img class="h-auto w-5 mr-2 cursor-pointer" src="assets/images/instagram.png" alt="">
+                       <a target="_blank" href="https://wa.me/5511995153269">
+                           <img class="h-auto w-5 mr-2 cursor-pointer" src="assets/images/whats.png" alt="">
+                       </a>
+                       <a target="_blank" href="https://www.instagram.com/romanoconstrutoramogi">
+                           <img class="h-auto w-5 mr-2 cursor-pointer" src="assets/images/instagram.png" alt="">
+                       </a>
                     </div>
                 </nav>
            </div>
@@ -80,23 +85,61 @@
                         <p class="text-sm mt-2">Numero que vc me falou</p> 
                     </div>
                     <div class="flex mt-2">
-                        <img class="h-auto w-5 mr-2" src="assets/images/whats.png" alt="">
-                        <img class="h-auto w-5 mr-2" src="assets/images/instagram.png" alt="">
+                        <a target="_blank" href="https://wa.me/5511995153269">
+                            <img class="h-auto w-5 mr-2" src="assets/images/whats.png" alt="">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/romanoconstrutoramogi/">
+                            <img class="h-auto w-5 mr-2" src="assets/images/instagram.png" alt="">
+                        </a>
                     </div>
                     <div class="mt-6 flex">
-                        <button class="w-26 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-xs px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(mamoraria)</button>
-                        <button class="w-26 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-xs px-1 py-3 shadow-md shadow-black hover:bg-slate-800">(outra area)</button>
+                        <button class="w-26 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-xs px-1 py-3 shadow-md shadow-black hover:bg-slate-800">Opção 1</button>
+                        <button class="w-26 h-8 mr-2 flex items-center bg-escuro rounded-full text-white text-xs px-1 py-3 shadow-md shadow-black hover:bg-slate-800">Opção 2)</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="service" class="h-screen bg-black">
+        <section id="service" class="h-auto bg-black relative pb-4">
             <div class="absolute w-full h-full bg-cover bg-center opacity-10 bg-[url('./assets/images/serviços.png')]"></div>
-            <div class="container mx-auto px-4">
-                <div id="serviceArea" class="relative flex-col pt-16 items-center md:flex md:flex-wrap md:justify-center">
+            <div class="container mx-auto px-4 h-full">
+                <div id="serviceArea" class="relative h-full flex-col pt-16 items-center md:flex md:flex-wrap md:justify-center">
                     <div class="relative flex mb-6 items-center flex-col">
                         <h2 class="text-claro text-3xl font-bold">Serviços</h2>
                         <div class="w-8 h-0.5 bg-claro"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="h-screen bg-escuro">
+            <div class="container mx-auto px-4 h-2/3">
+                <div class="relative flex mb-6 items-center flex-col pt-6">
+                    <h2 class="text-claro text-3xl font-bold">Portfolio</h2>
+                    <div class="w-8 h-0.5 bg-claro"></div>
+                </div>
+                <div class=" bg-escuro shadow-black shadow-md flex w-full h-full" >
+                    <div class="w-full flex items-center flex-col">
+                        <h3 class="text-medio text-lg m-4 uppercase">Porcelanatos e Revestimentos</h3>
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-24 h-24 overflow-hidden rounded-lg mr-2">
+                                <img class="" src="assets/images/portfolio/imgP (3).jpeg" alt="">
+                            </div>
+                            <div class="w-24 h-24 overflow-hidden rounded-lg mr-2">
+                                <img class="" src="assets/images/portfolio/imgP (4).jpeg" alt="">
+                            </div>
+                            <div class="w-24 h-24 overflow-hidden rounded-lg mr-2">
+                                <img class="" src="assets/images/portfolio/imgP (5).jpeg" alt="">
+                            </div>
+                            <div class="w-24 h-24 overflow-hidden rounded-lg mr-2">
+                                <img class="" src="assets/images/portfolio/imgP (3).jpeg" alt="">
+                            </div>
+                            <div class="w-24 h-24 overflow-hidden rounded-lg mr-2">
+                                <img class="" src="assets/images/portfolio/imgP (4).jpeg" alt="">
+                            </div>
+                            <div class="w-24 h-24 overflow-hidden rounded-lg mr-2">
+                                <img class="" src="assets/images/portfolio/imgP (5).jpeg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

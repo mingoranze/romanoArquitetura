@@ -8,8 +8,8 @@ service.map((item, index)=>{
 }); 
 
 document.querySelector('#close').addEventListener('click', ()=>{
-    document.querySelector('#menuOpen').style.display = 'none'
+    document.querySelector('#menuOpen').style.transform = 'translateY(-20rem)'
 });
 document.querySelector('#open').addEventListener('click', ()=>{
-    document.querySelector('#menuOpen').style.display = 'flex'
+    document.querySelector('#menuOpen').style.transform = 'translate(0)';
 });
