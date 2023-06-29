@@ -4,4 +4,5 @@ const service = [
     {name:'Forros e sancas', link: '#3', desc:'descrição a definir, pode ser bem breve'},
     {name:'Instalaçoes elétricas e hidráulicas', link: '#4', desc:'descrição a definir, pode ser bem breve'},
     {name:'Pinturas e efeitos', link: '#5', desc:'descrição a definir, pode ser bem breve'},
+    {name:'Pocelanataria', link: '#6', desc:'descrição a definir, pode ser bem breve'},
 ];
