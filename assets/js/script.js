@@ -7,6 +7,12 @@ service.map((item, index)=>{
     document.querySelector('#serviceArea').append(serviceItem);
 }); 
 
+portfolioJSON.map((item, index)=>{
+    let portfolioItem = document.querySelector('#portfolio').cloneNode(true);
+
+    document.querySelector('#portfolioArea').append(portfolioItem);
+})
+
 
 document.querySelector('#close').addEventListener('click', ()=>{
     document.querySelector('#menuOpen').style.transform = 'translateY(-40rem)'

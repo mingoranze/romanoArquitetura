@@ -40,9 +40,10 @@
             <div class="bg-claro w-8 h-0.5 mt-2"></div>
         </div>
 
-        <a id="portfolioImg" href="#">
-            <img  class="w-20  h-20 m-2 rounded-lg " src="" alt="...">
-        </a>
+        <div id="portfolio" class="relative h-60 w-full relative bg-black">
+            <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('...')]"></div>
+            <h2 class="text-white relative p-2 text-md font-light">...</h2>
+        </div>
 
     </div>
     <header class="bg-escuro w-full h-12 flex items-center">
@@ -131,37 +132,20 @@
             </div>
         </section>
 
-        <section id="portfolio1" class="bg-escuro pb-5">
+        <section id="portfolio" class="bg-escuro pb-5">
             <div class="container mx-auto px-4 h-full">
                 <div class="relative flex mb-6 items-center flex-col pt-6">
                     <h2 class="text-claro text-3xl font-bold">Portfolio</h2>
                     <div class="w-8 h-0.5 bg-claro"></div>
                 </div>
-                <div class="h-full w-full flex flex-wrap items-center justify-center flex-col">
-                    <div class="relative h-60 w-full relative bg-black">
-                        <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('./assets/images/portfolio/a.jpeg')]"></div>
-                        <h2 class="text-white relative p-2 text-md font-light">Porcelanatos e Revestimentos</h2>
-                    </div>
-                    <div class="relative h-60 w-full relative bg-black">
-                        <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('./assets/images/portfolio/b.jpeg')]"></div>
-                        <h2 class="text-white relative p-2 text-md font-light">Forros e sancas</h2>
-                    </div>
-                    <div class="relative h-60 w-full relative bg-black">
-                        <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('./assets/images/portfolio/c.jpeg')]"></div>
-                        <h2 class="text-white relative p-2 text-md font-light">Instalaçoes elétricas e hidráulicas</h2>
-                    </div>
-                    <div class="relative h-60 w-full relative bg-black">
-                        <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('./assets/images/portfolio/d.jpeg')]"></div>
-                        <h2 class="text-white relative p-2 text-md font-light">Pinturas e efeitos</h2>
-                    </div>
-                    <div class="relative h-60 w-full relative bg-black">
-                        <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('./assets/images/portfolio/e.jpeg')]"></div>
-                        <h2 class="text-white relative p-2 text-md font-light">Pocelanataria</h2>
-                    </div>
+                <div id="portfolioArea" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
+                   
 
-                    <div class="absolute z-100 bg-black w-full h-full opacity-90 flex items-center justify-center">
+                    <div id="modal" class="hidden absolute z-100 bg-black w-full h-full opacity-80 flex items-center justify-center">
                         <div class="relative bg-red-500 w-3/4 h-4/5">
-                            ...
+                            <div class="flex justify-end">
+                                <a id="closeModal" class="absolute bottom-0" href="">fechar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,7 +156,7 @@
 
     </footer>
     <script src="assets/js/services.js"></script>
-    <script src="assets/js/porcelanatosRevestimentos.js"></script>
+    <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
