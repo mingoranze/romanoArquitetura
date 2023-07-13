@@ -9,10 +9,20 @@ service.map((item, index)=>{
 
 portfolioJSON.map((item, index)=>{
     let portfolioItem = document.querySelector('#portfolio').cloneNode(true);
-
+    
+    portfolioItem.querySelector('h2').innerHTML = item.name;
+    portfolioItem.querySelector('#portfolioImg').style.backgroundImage = `url('${item.bg}')`;
+    portfolioItem.addEventListener('click', (e)=>{
+        e.preventDefault()
+        let modal = document.querySelector('#modal');
+        modal.style.display = 'flex';
+    });
+    document.querySelector('#closeModal').addEventListener('click', (e)=>{
+        e.preventDefault()
+        modal.style.display = 'none'
+    });
     document.querySelector('#portfolioArea').append(portfolioItem);
 })
-
 
 document.querySelector('#close').addEventListener('click', ()=>{
     document.querySelector('#menuOpen').style.transform = 'translateY(-40rem)'

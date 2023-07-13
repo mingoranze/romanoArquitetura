@@ -41,7 +41,7 @@
         </div>
 
         <div id="portfolio" class="relative h-60 w-full relative bg-black">
-            <div class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('...')]"></div>
+            <div id="portfolioImg" class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('...')]"></div>
             <h2 class="text-white relative p-2 text-md font-light">...</h2>
         </div>
 
@@ -141,10 +141,18 @@
                 <div id="portfolioArea" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
                    
 
-                    <div id="modal" class="hidden absolute z-100 bg-black w-full h-full opacity-80 flex items-center justify-center">
-                        <div class="relative bg-red-500 w-3/4 h-4/5">
-                            <div class="flex justify-end">
-                                <a id="closeModal" class="absolute bottom-0" href="">fechar</a>
+                    <div id="modal" class="absolute z-50 bg-black/75 w-full h-full flex items-center justify-center">
+                        <div class="relative w-3/4 h-4/5 rounded-lg bg-escuro flex flex-col justify-center">
+                            <h2 class="text-white text-2xl text-center pb-5">Porcelanatos e Revestimentos</h2>
+                            <div class="hidden">
+                                <div><img src="assets/images/direita.svg" alt=""></div>
+                                <div><img src="assets/images/esquerda.svg" alt=""></div>
+                            </div>
+                            <div class="w-full h-4/5">
+                                <div class="w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/a.jpeg')]"></div>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <a id="closeModal" class="mt-8 text-white" href="">fechar</a>
                             </div>
                         </div>
                     </div>
@@ -153,7 +161,7 @@
         </section>
     </main>
     <footer class="w-full h-20 bg-slate-950">
-
+        ...
     </footer>
     <script src="assets/js/services.js"></script>
     <script src="assets/js/portfolio.js"></script>
