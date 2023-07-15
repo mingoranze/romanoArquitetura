@@ -31,3 +31,7 @@ document.querySelector('#close').addEventListener('click', ()=>{
 document.querySelector('#open').addEventListener('click', ()=>{
     document.querySelector('#menuOpen').style.transform = 'translate(0)';
 });
+
+let slidesImg = document.querySelectorAll('.fotoPort').length;
+let larguraSlider = document.querySelector('#slider').clientWidth;
+document.querySelector('#sliderArea').style.widht = `${larguraSlider * slidesImg}`

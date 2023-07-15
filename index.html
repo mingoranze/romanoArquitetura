@@ -141,18 +141,22 @@
                 <div id="portfolioArea" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
                    
 
-                    <div id="modal" class="hidden absolute z-50 bg-black/75 w-full h-full flex items-center justify-center">
+                    <div id="modal" class="hidden fixed top-0 bottom-0 transition-opacity z-50 bg-black/75 w-full h-full flex items-center justify-center">
                         <div class="relative w-3/4 h-4/5 rounded-lg bg-escuro flex flex-col justify-center">
-                            <h2 class="text-white text-2xl text-center pb-5">Porcelanatos e Revestimentos</h2>
-                            <div class="hidden">
-                                <div><img src="assets/images/direita.svg" alt=""></div>
-                                <div><img src="assets/images/esquerda.svg" alt=""></div>
+                            <h2 class="text-white text-lg text-center pb-5">Porcelanatos e Revestimentos</h2>
+                            <div class="flex justify-between h-6 w-full absolute">
+                                <div id="esquerda"><img class="w-full h-full cursor-pointer" src="assets/images/esquerda.svg" alt=""></div>
+                                <div id="direita"><img class="w-full h-full cursor-pointer" src="assets/images/direita.svg" alt=""></div>
                             </div>
-                            <div class="w-full h-4/5">
-                                <div class="w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/a.jpeg')]"></div>
+                            <div id="slider" class=" w-full h-4/5 overflow-hidden">
+                                <div id="sliderArea" class="flex h-full">
+                                    <div class="fotoPort w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/a.jpeg')]"></div>
+                                    <div class="fotoPort w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/b.jpeg')]"></div>
+                                    <div class="fotoPort w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/c.jpeg')]"></div>
+                                </div>
                             </div>
                             <div class="flex justify-center items-center">
-                                <a id="closeModal" class="mt-8 text-white" href="">fechar</a>
+                                <a id="closeModal" class="mt-8 text-white text-sm font-light uppercase" href="">fechar</a>
                             </div>
                         </div>
                     </div>
