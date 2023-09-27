@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script>
         tailwind.config = {
             theme: {
@@ -40,10 +41,10 @@
             <div class="bg-claro w-8 h-0.5 mt-2"></div>
         </div>
 
-        <div id="portfolio" class="relative h-60 w-full relative bg-black">
-            <div id="portfolioImg" class="hover:opacity-100 transition-opacity duration-600 h-full w-full absolute bg-cover bg-center opacity-50 bg-[url('...')]"></div>
-            <h2 class="text-white relative p-2 text-md font-light">...</h2>
+        <div id="porcelanatosItem" class="w-32 h-32 m-2 overflow-hidden transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300">
+            <img src="" alt="">
         </div>
+        
 
     </div>
     <header class="bg-escuro w-full h-12 flex items-center">
@@ -134,32 +135,64 @@
 
         <section id="portfolio" class="bg-escuro pb-5">
             <div class="container mx-auto px-4 h-full">
+        
                 <div class="relative flex mb-6 items-center flex-col pt-6">
                     <h2 class="text-claro text-3xl font-bold">Portfolio</h2>
                     <div class="w-8 h-0.5 bg-claro"></div>
                 </div>
-                <div id="portfolioArea" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
-                   
-
-                    <div id="modal" class="hidden fixed top-0 bottom-0 transition-opacity z-50 bg-black/75 w-full h-full flex items-center justify-center">
-                        <div class="relative w-3/4 h-4/5 rounded-lg bg-escuro flex flex-col justify-center">
-                            <h2 class="text-white text-lg text-center pb-5">Porcelanatos e Revestimentos</h2>
-                            <div class="flex justify-between h-6 w-full absolute">
-                                <div id="esquerda"><img class="w-full h-full cursor-pointer" src="assets/images/esquerda.svg" alt=""></div>
-                                <div id="direita"><img class="w-full h-full cursor-pointer" src="assets/images/direita.svg" alt=""></div>
-                            </div>
-                            <div id="slider" class=" w-full h-4/5 overflow-hidden">
-                                <div id="sliderArea" class="flex h-full">
-                                    <div class="fotoPort w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/a.jpeg')]"></div>
-                                    <div class="fotoPort w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/b.jpeg')]"></div>
-                                    <div class="fotoPort w-full h-full bg-center bg-cover bg-[url('./assets/images/portfolio/c.jpeg')]"></div>
-                                </div>
-                            </div>
-                            <div class="flex justify-center items-center">
-                                <a id="closeModal" class="mt-8 text-white text-sm font-light uppercase" href="">fechar</a>
-                            </div>
-                        </div>
+                <div id="projetos" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
+                    <div class="relative flex mb-6 items-center flex-col pt-6">
+                        <h2 class="text-claro text-lg font-bold">Emissao de RRT e projetos</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
                     </div>
+                    <div id="projetosArea" class="portfolioArea shadow-md shadow-black w-full h-auto flex flex-wrap items-center justify-center">
+                        
+                   </div>
+                </div>
+                <div id="porcelanatos_revestimentos" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
+                    <div class="relative flex mb-6 items-center flex-col pt-6">
+                        <h2 class="text-claro text-lg font-bold">Porcelanatos e Revestimentos</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
+                    </div>
+                    <div id="porcelanatos_revestimentosArea" class="portfolioArea shadow-md shadow-black w-full h-auto flex flex-wrap items-center justify-center">
+                        
+                   </div>
+                </div>
+                <div id="forros_sancas" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
+                    <div class="relative flex mb-6 items-center flex-col pt-6">
+                        <h2 class="text-claro text-lg font-bold">Forros e sancas</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
+                    </div>
+                    <div id="forros_sancasArea" class="portfolioArea shadow-md shadow-black w-full h-auto flex flex-wrap items-center justify-center">
+                        
+                   </div>
+                </div>
+                <div id="instalacoes_eletricas_hidraulicas" class="hidden h-full w-full flex flex-wrap items-center justify-center flex-col">
+                    <div class="relative flex mb-6 items-center flex-col pt-6">
+                        <h2 class="text-claro text-lg font-bold">Instalaçoes elétricas e hidráulicas</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
+                    </div>
+                    <div id="instalacoes_eletricas_hidraulicasArea" class="portfolioArea shadow-md shadow-black w-full h-auto flex flex-wrap items-center justify-center">
+                        
+                   </div>
+                </div>
+                <div id="pinturas_efeitos" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
+                    <div class="relative flex mb-6 items-center flex-col pt-6">
+                        <h2 class="text-claro text-lg font-bold">Pinturas e efeitos</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
+                    </div>
+                    <div id="pinturas_efeitosArea" class="portfolioArea shadow-md shadow-black w-full h-auto flex flex-wrap items-center justify-center">
+                        
+                   </div>
+                </div>
+                <div id="pocelanataria" class="h-full w-full flex flex-wrap items-center justify-center flex-col">
+                    <div class="relative flex mb-6 items-center flex-col pt-6">
+                        <h2 class="text-claro text-lg font-bold">Pocelanataria</h2>
+                        <div class="w-8 h-0.5 bg-claro"></div>
+                    </div>
+                    <div id="pocelanatariaArea" class="portfolioArea shadow-md shadow-black w-full h-auto flex flex-wrap items-center justify-center">
+                        
+                   </div>
                 </div>
             </div>
         </section>

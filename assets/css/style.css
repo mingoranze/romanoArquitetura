@@ -1,0 +1,6 @@
+.portfolioArea img {
+    width: 8rem;
+    height: 8rem;
+    margin: .5rem;
+    overflow: hidden;
+}
