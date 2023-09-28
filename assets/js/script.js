@@ -9,48 +9,37 @@ service.map((item, index)=>{
 }); 
 
 
-    
 projetos.forEach(caminho => {
-        const areaDeImagens = document.getElementById('projetosArea');
-        const imagem = document.createElement('img');
-        imagem.src = caminho.img;
-        imagem.alt = 'projetos'; 
-      
-        areaDeImagens.appendChild(imagem);
+  const clone = document.querySelector('#imgPortfolio img').cloneNode(true);
+  const areaDeImagens = document.getElementById('projetosArea');
+  clone.src = caminho.img;
+  areaDeImagens.appendChild(clone);
 });
 
 porcelanatos_revestimentos.forEach(caminho => {
+  const clone = document.querySelector('#imgPortfolio img').cloneNode(true);
   const areaDeImagens = document.getElementById('porcelanatos_revestimentosArea');
-  const imagem = document.createElement('img');
-  imagem.src = caminho.img;
-  imagem.alt = 'porcelanatos e revestimentos'; 
-
-  areaDeImagens.appendChild(imagem);
+  clone.src = caminho.img;
+  areaDeImagens.appendChild(clone);
 });
 
 forros_sancas.forEach(caminho => {
+  const clone = document.querySelector('#imgPortfolio img').cloneNode(true);
   const areaDeImagens = document.getElementById('forros_sancasArea');
-  const imagem = document.createElement('img');
-  imagem.src = caminho.img;
-  imagem.alt = 'forros e sancas'; 
-
-  areaDeImagens.appendChild(imagem);
+  clone.src = caminho.img;
+  areaDeImagens.appendChild(clone);
 });
 
 pinturas_efeitos.forEach(caminho => {
+  const clone = document.querySelector('#imgPortfolio img').cloneNode(true);
   const areaDeImagens = document.getElementById('pinturas_efeitosArea');
-  const imagem = document.createElement('img');
-  imagem.src = caminho.img;
-  imagem.alt = 'pinturas e efeitos'; 
-
-  areaDeImagens.appendChild(imagem);
+  clone.src = caminho.img;
+  areaDeImagens.appendChild(clone);
 });
 
 porcelanataria.forEach(caminho => {
+  const clone = document.querySelector('#imgPortfolio img').cloneNode(true);
   const areaDeImagens = document.getElementById('pocelanatariaArea');
-  const imagem = document.createElement('img');
-  imagem.src = caminho.img;
-  imagem.alt = 'porcelanataria'; 
-
-  areaDeImagens.appendChild(imagem);
+  clone.src = caminho.img;
+  areaDeImagens.appendChild(clone);;
 });
