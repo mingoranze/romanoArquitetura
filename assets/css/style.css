@@ -1,3 +1,6 @@
+* {
+    scroll-behavior: smooth;
+}
 .portfolioArea img {
     width: 8rem;
     height: 8rem;

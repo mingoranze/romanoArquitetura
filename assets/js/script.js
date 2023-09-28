@@ -2,125 +2,55 @@ service.map((item, index)=>{
     let serviceItem = document.querySelector('#service').cloneNode(true);
 
     serviceItem.querySelector('h2').innerHTML = item.name;
-    serviceItem.querySelector('p').innerHTML = item.desc
+    serviceItem.querySelector('p').innerHTML = item.desc;
+    serviceItem.querySelector('a').href = item.link;
 
     document.querySelector('#serviceArea').append(serviceItem);
 }); 
 
-const projetos = '../assets/images/portfolio/emissao_rrt_projetos'; 
 
-fetch(projetos)
-  .then(response => response.text())
-  .then(text => {
-    const parser = new DOMParser();
-    const htmlDoc = parser.parseFromString(text, 'text/html');
-    const links = htmlDoc.querySelectorAll('a');
-    const imagens = Array.from(links).filter(link => {
-      return /\.(jpg|jpeg|png)$/.test(link.href);
-    });
-    const arrayDeImagens = imagens.map(imagem => imagem.href);
     
-    const areaDeImagens = document.getElementById('projetosArea');
-    arrayDeImagens.forEach(caminho => {
+projetos.forEach(caminho => {
+        const areaDeImagens = document.getElementById('projetosArea');
         const imagem = document.createElement('img');
-        imagem.src = caminho;
-        imagem.alt = 'Descrição da imagem'; // Adicione uma descrição apropriada
+        imagem.src = caminho.img;
+        imagem.alt = 'projetos'; 
       
         areaDeImagens.appendChild(imagem);
-      });
-  });
+});
 
-  const porcelanatosRevestimentos = '../assets/images/portfolio/porcelanatos_e_revestimentos'; 
+porcelanatos_revestimentos.forEach(caminho => {
+  const areaDeImagens = document.getElementById('porcelanatos_revestimentosArea');
+  const imagem = document.createElement('img');
+  imagem.src = caminho.img;
+  imagem.alt = 'porcelanatos e revestimentos'; 
 
-fetch(porcelanatosRevestimentos)
-  .then(response => response.text())
-  .then(text => {
-    const parser = new DOMParser();
-    const htmlDoc = parser.parseFromString(text, 'text/html');
-    const links = htmlDoc.querySelectorAll('a');
-    const imagens = Array.from(links).filter(link => {
-      return /\.(jpg|jpeg|png)$/.test(link.href);
-    });
-    const arrayDeImagens = imagens.map(imagem => imagem.href);
-    
-    const areaDeImagens = document.getElementById('porcelanatos_revestimentosArea');
-    arrayDeImagens.forEach(caminho => {
-        const imagem = document.createElement('img');
-        imagem.src = caminho;
-        imagem.alt = 'Descrição da imagem'; // Adicione uma descrição apropriada
-      
-        areaDeImagens.appendChild(imagem);
-      });
-  });
+  areaDeImagens.appendChild(imagem);
+});
 
-  const forros_sancas = '../assets/images/portfolio/forros_e_sancas'; 
+forros_sancas.forEach(caminho => {
+  const areaDeImagens = document.getElementById('forros_sancasArea');
+  const imagem = document.createElement('img');
+  imagem.src = caminho.img;
+  imagem.alt = 'forros e sancas'; 
 
-  fetch(forros_sancas)
-    .then(response => response.text())
-    .then(text => {
-      const parser = new DOMParser();
-      const htmlDoc = parser.parseFromString(text, 'text/html');
-      const links = htmlDoc.querySelectorAll('a');
-      const imagens = Array.from(links).filter(link => {
-        return /\.(jpg|jpeg|png)$/.test(link.href);
-      });
-      const arrayDeImagens = imagens.map(imagem => imagem.href);
-      
-      const areaDeImagens = document.getElementById('forros_sancasArea');
-      arrayDeImagens.forEach(caminho => {
-          const imagem = document.createElement('img');
-          imagem.src = caminho;
-          imagem.alt = 'Descrição da imagem'; // Adicione uma descrição apropriada
-        
-          areaDeImagens.appendChild(imagem);
-        });
-    });
+  areaDeImagens.appendChild(imagem);
+});
 
-    const pinturas_efeitos = '../assets/images/portfolio/pinturas_e_efeitos'; 
+pinturas_efeitos.forEach(caminho => {
+  const areaDeImagens = document.getElementById('pinturas_efeitosArea');
+  const imagem = document.createElement('img');
+  imagem.src = caminho.img;
+  imagem.alt = 'pinturas e efeitos'; 
 
-    fetch(pinturas_efeitos)
-      .then(response => response.text())
-      .then(text => {
-        const parser = new DOMParser();
-        const htmlDoc = parser.parseFromString(text, 'text/html');
-        const links = htmlDoc.querySelectorAll('a');
-        const imagens = Array.from(links).filter(link => {
-          return /\.(jpg|jpeg|png)$/.test(link.href);
-        });
-        const arrayDeImagens = imagens.map(imagem => imagem.href);
-        
-        const areaDeImagens = document.getElementById('pinturas_efeitosArea');
-        arrayDeImagens.forEach(caminho => {
-            const imagem = document.createElement('img');
-            imagem.src = caminho;
-            imagem.alt = 'Descrição da imagem'; // Adicione uma descrição apropriada
-          
-            areaDeImagens.appendChild(imagem);
-          });
-      });
-  
+  areaDeImagens.appendChild(imagem);
+});
 
+porcelanataria.forEach(caminho => {
+  const areaDeImagens = document.getElementById('pocelanatariaArea');
+  const imagem = document.createElement('img');
+  imagem.src = caminho.img;
+  imagem.alt = 'porcelanataria'; 
 
-const pocelanataria = '../assets/images/portfolio/pocelanataria'; 
-
-fetch(pocelanataria)
-  .then(response => response.text())
-  .then(text => {
-    const parser = new DOMParser();
-    const htmlDoc = parser.parseFromString(text, 'text/html');
-    const links = htmlDoc.querySelectorAll('a');
-    const imagens = Array.from(links).filter(link => {
-      return /\.(jpg|jpeg|png)$/.test(link.href);
-    });
-    const arrayDeImagens = imagens.map(imagem => imagem.href);
-    
-    const areaDeImagens = document.getElementById('pocelanatariaArea');
-    arrayDeImagens.forEach(caminho => {
-        const imagem = document.createElement('img');
-        imagem.src = caminho;
-        imagem.alt = 'Descrição da imagem'; // Adicione uma descrição apropriada
-      
-        areaDeImagens.appendChild(imagem);
-      });
-  });
-
+  areaDeImagens.appendChild(imagem);
+});
